@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "$";
+const prefix = "r";
 
 client.on('message', async msg => { 
 	if (msg.author.bot) return undefined;
@@ -277,37 +277,37 @@ KiNg66S.on('message', message => {
   if (message.author.id !== "399353508429824000") return;
 
   
-  if (message.content.startsWith(PREFIX + 'watch')) {
+  if (message.content.startsWith(PREFIX + 'sw')) {
   KiNg66S.user.setActivity(argresult, {type: 'WATCHING'})
      console.log('test' + argresult);
     message.channel.sendMessage(`**Watch Now: **${argresult}`)
 } 
 
  
-  if (message.content.startsWith(PREFIX + 'listen')) {
+  if (message.content.startsWith(PREFIX + 'sl')) {
   KiNg66S.user.setActivity(argresult, {type: 'LISTENING'})
      console.log('test' + argresult);
     message.channel.sendMessage(`LISTENING Now: **${argresult}`)
 } 
 
 
-if (message.content.startsWith(PREFIX + 'setname')) {
+if (message.content.startsWith(PREFIX + 'sn')) {
   KiNg66S.user.setUsername(argresult).then
       message.channel.sendMessage(`Username Changed To **${argresult}**`)
   return message.reply("You Can change the username 2 times per hour");
 } 
 
-if (message.content.startsWith(PREFIX + 'setavatar')) {
+if (message.content.startsWith(PREFIX + 'sa')) {
   KiNg66S.user.setAvatar(argresult);
    message.channel.sendMessage(`Avatar Changed Successfully To **${argresult}**`);
 }
 
-if (message.content.startsWith(PREFIX + 'twitch')) {
+if (message.content.startsWith(PREFIX + 'ss')) {
   KiNg66S.user.setGame(argresult, "https://www.twitch.tv/KiNg66S");
      console.log('test' + argresult);
     message.channel.sendMessage(`**Streaming: **${argresult}`)
 } 
-if (message.content.startsWith(PREFIX + 'play')) {
+if (message.content.startsWith(PREFIX + 'sp')) {
   KiNg66S.user.setGame(argresult);
      console.log('test' + argresult);
     message.channel.sendMessage(`Playing: **${argresult}`)

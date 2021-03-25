@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "$";
+const prefix = "A";
 /////////////////////////
 ////////////////////////
 
@@ -361,7 +361,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`made by ╲⎝⧹PBGAMING | Five🌟⧸⎠╱`,"http://twitch.tv/Death Shop")
+client.user.setGame(`BY: X_Abdelrahman_X`,"http://twitch.tv/Death Shop")
 client.user.setStatus("dnd")
 });
 

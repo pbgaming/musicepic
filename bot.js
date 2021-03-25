@@ -2,6 +2,8 @@ const Discord = require('discord.js');
 
 const Util = require('discord.js');
 
+const token = 'ODI0NzY1OTMwNDQ1ODY0OTkw.YF0JIQ.jFiCMOmLWDC-sIVRSvVXmzPiVqY';
+
 const getYoutubeID = require('get-youtube-id');
 
 const fetchVideoInfo = require('youtube-info');
